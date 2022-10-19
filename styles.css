@@ -9,21 +9,31 @@
   src: url('./assets/fonts/Quicksilver.ttf') format('truetype');
 }
 
+a{
+  text-decoration: none;
+  color: black;
+}
+
 body {
-  background-color: #AAFFFD;
+  background-color: white;
   font-family: 'Overpass', monospace;
-  overflow:  hidden;
+  overflow-x:  hidden;
+  padding: 0;
+  margin: 0;
+  transition: 1s;
 }
 
 #banner {
   top: 0;
   left: 0;
-  position: absolute;
+  position: fixed;
+  padding: 0 10% 0 10%;
   width: 100%;
-  height: 6%;
-  background-color: #73DEDB;
+  height: 4%;
+  background-color: white;
   padding: 2em;
   overflow: hidden;
+  border-bottom: 1em solid black
 }
 
 #banner a{
@@ -32,21 +42,50 @@ body {
   text-decoration: none;
 }
 
+#banner a:hover{
+  background-color: grey;
+  transform: scale(110%);
+}
+
 #nameContainer{
   font-family: 'Quicksilver';
-  left: 0;
-  margin: auto;
-  width: 100%;
+  width: 80%;
   text-align: left;
   padding: 10%;
   font-size: 10em;
   font-weight: 200;
-  background-color: rgba(255,255,255,0.8);
+  color: white;
+  background: linear-gradient(62deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 25%, rgba(252,176,69,1) 50%);
   border-radius: 0 0 95% 0;
 }
 
 #nameContainerSubtitle{
+  color: rgba(20,20,20,0.9);
   font-size: 0.5em;
   font-weight: 100;
   font-family: 'Overpass';
+  text-shadow: none;
+}
+
+#aboutMeContainer{
+  font-family: 'Quicksilver';
+  width: 100%;
+  text-align: left;
+  padding: 10%;
+  font-size: 6em;
+  font-weight: 200;
+  color: white;
+  background: black;
+  border-radius: 30% 0 0 0;
+}
+
+#aboutMeContainerInfo{
+  width: 60%;
+  font-size: 0.2em;
+  line-height: 3em;
+  font-family: 'Overpass';
+}
+
+#aboutMeContainerInfo a{
+  color: blue;
 }

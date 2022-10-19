@@ -1,0 +1,52 @@
+
+@font-face {
+  font-family : 'Overpass';
+  src: url('./assets/fonts/Overpass.ttf') format('truetype');
+}
+
+@font-face {
+  font-family : 'Quicksilver';
+  src: url('./assets/fonts/Quicksilver.ttf') format('truetype');
+}
+
+body {
+  background-color: #AAFFFD;
+  font-family: 'Overpass', monospace;
+  overflow:  hidden;
+}
+
+#banner {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 6%;
+  background-color: #73DEDB;
+  padding: 2em;
+  overflow: hidden;
+}
+
+#banner a{
+  padding: 0 12% 0 12%;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+#nameContainer{
+  font-family: 'Quicksilver';
+  left: 0;
+  margin: auto;
+  width: 100%;
+  text-align: left;
+  padding: 10%;
+  font-size: 10em;
+  font-weight: 200;
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 0 0 95% 0;
+}
+
+#nameContainerSubtitle{
+  font-size: 0.5em;
+  font-weight: 100;
+  font-family: 'Overpass';
+}

@@ -1,0 +1,14 @@
+
+body {
+  background-color: #AAFFFD;
+}
+
+#banner {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  background-color: #73DEDB;
+  padding: 2%;
+}

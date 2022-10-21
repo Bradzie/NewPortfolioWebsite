@@ -44,11 +44,16 @@ body {
 
 #banner a:hover{
   background-color: grey;
-  transform: scale(110%);
+  transform: translateX(10%);
+}
+
+#spacer{
+  height: 30px;
 }
 
 #nameContainer{
   font-family: 'Quicksilver';
+  letter-spacing: -0.1em;
   width: 80%;
   text-align: left;
   padding: 10%;
@@ -65,6 +70,7 @@ body {
   font-weight: 100;
   font-family: 'Overpass';
   text-shadow: none;
+  letter-spacing: normal;
 }
 
 #aboutMeContainer{
@@ -88,4 +94,45 @@ body {
 
 #aboutMeContainerInfo a{
   color: blue;
+}
+
+#leftSideProjectContainer {
+  font-family: 'Quicksilver';
+  left: 0;
+  width: 60%;
+  text-align: left;
+  padding: 10%;
+  font-size: 6em;
+  font-weight: 400;
+  color: white;
+  background: black;
+}
+
+#leftSideProjectContainer img {
+  border-radius: 3%;
+  width: 49%;
+}
+
+#leftSideProjectContainer a {
+  color: blue;
+}
+
+#rightSideProjectContainer {
+  position: absolute;
+  font-family: 'Quicksilver';
+  margin: 0;
+  right: 0;
+  width: 60%;
+  text-align: left;
+  padding: 10%;
+  font-size: 6em;
+  font-weight: 400;
+  color: white;
+  background: black;
+}
+
+#projectContainerInfo {
+  font-family: 'Overpass';
+  font-size: 0.2em;
+  font-weight: 200;
 }

@@ -29,7 +29,7 @@ body {
   position: fixed;
   padding: 0 10% 0 10%;
   width: 100%;
-  height: 4%;
+  height: 1%;
   background-color: white;
   padding: 2em;
   overflow: hidden;
@@ -51,15 +51,129 @@ body {
   height: 30px;
 }
 
+#gearContainer1{
+  position: absolute;
+  right: 500px;
+  transform: translateY(-140px);
+  z-index: -1;
+}
+
+#gearContainer2{
+  position: absolute;
+  right: 275px;
+  transform: translateY(-140px);
+  z-index: -1;
+  animation-direction: reverse;
+  animation-delay: 0.25s;
+}
+
+#gearCenter{
+  position: absolute;
+  left:20px;
+  top: 20px;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-color: black;
+}
+
+#gearHollow{
+  position: absolute;
+  left:45px;
+  top: 45px;
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  background-color: white;
+}
+
+@keyframes cogTurn1{
+  from {transform: rotate(0deg);}
+  to {transform: rotate(180deg);}
+}
+
+@keyframes cogTurn2{
+  from {transform: rotate(45deg);}
+  to {transform: rotate(225deg);}
+}
+
+#gearCog1{
+  position: absolute;
+  width: 240px;
+  height: 40px;
+  background-color: black;
+  top: 100px;
+  animation-name: cogTurn1;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: inherit;
+  animation-delay: inherit;
+}
+
+#gearCog2{
+  position: absolute;
+  width: 40px;
+  height: 240px;
+  background-color: black;
+  left: 100px;
+  animation-name: cogTurn1;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: inherit;
+  animation-delay: inherit;
+}
+
+#gearCog3{
+  position: absolute;
+  width: 240px;
+  height: 40px;
+  background-color: black;
+  top: 100px;
+  transform: rotate(45deg);
+  animation-name: cogTurn2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: inherit;
+  animation-delay: inherit;
+}
+
+#gearCog4{
+  position: absolute;
+  width: 40px;
+  height: 240px;
+  background-color: black;
+  left: 100px;
+  transform: rotate(45deg);
+  animation-name: cogTurn2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: inherit;
+  animation-delay: inherit;
+}
+
+@keyframes nameContainerGradient{
+  from {background: rgb(69,176,252);}
+  to {background: rgb(252,12,69);}
+}
+
 #nameContainer{
   font-family: 'Quicksilver';
-  letter-spacing: -0.1em;
-  width: 80%;
+  letter-spacing: 0.1em;
+  width: 50%;
   text-align: left;
-  padding: 10%;
-  font-size: 10em;
+  padding: 8%;
+  padding-left: 4%;
+  font-size: 5em;
   font-weight: 200;
   color: white;
+  animation-name: nameContainerGradient;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
   background: linear-gradient(62deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 25%, rgba(252,176,69,1) 50%);
   border-radius: 0 0 95% 0;
 }
@@ -98,11 +212,11 @@ body {
 
 #leftSideProjectContainer {
   font-family: 'Quicksilver';
-  left: 0;
+  float: left;
   width: 60%;
   text-align: left;
   padding: 10%;
-  font-size: 6em;
+  font-size: 6vw;
   font-weight: 400;
   color: white;
   background: black;
@@ -118,17 +232,19 @@ body {
 }
 
 #rightSideProjectContainer {
-  position: absolute;
   font-family: 'Quicksilver';
-  margin: 0;
-  right: 0;
+  float: right;
   width: 60%;
   text-align: left;
   padding: 10%;
-  font-size: 6em;
+  font-size: 6vw;
   font-weight: 400;
   color: white;
   background: black;
+}
+
+#rightSideProjectContainer a {
+  color: blue;
 }
 
 #projectContainerInfo {
